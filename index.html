@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li class="active"><a href="#user-registration">User Registration</a></li>
+                <li><a href="#appearance">Appearance</a></li>
+                <li><a href="#plugins">Plugins</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <header>
+                <h2>Default Form</h2>
+                <button id="update-form-btn">Update Form</button>
+            </header>
+
+            <section class="editor">
+                <!-- Field Options Section -->
+                <div class="settings">
+                    <h3>Field Options</h3>
+                    <div class="option">
+                        <label for="label">Label</label>
+                        <input type="text" id="label" placeholder="User Email">
+
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Description"></textarea>
+
+                        <label for="field-name">Field Name</label>
+                        <input type="text" id="field-name" placeholder="user_email">
+
+                        <label for="placeholder">Placeholder</label>
+                        <input type="text" id="placeholder" placeholder="Placeholder">
+                    </div>
+                </div>
+
+                <!-- Form Preview Section -->
+                <div class="preview">
+                    <h3>Default Form</h3>
+                    <form id="user-registration-form" action="#" method="POST">
+                        <div class="form-group">
+                            <!-- Dynamic fields will be added here -->
+                            <input type="email" id="user-email" placeholder="User Email">
+                            <input type="email" id="confirm-email" placeholder="Confirm Email">
+
+                            <input type="password" id="user-password" placeholder="User Password">
+                            <input type="password" id="confirm-password" placeholder="Confirm Password">
+
+                            <input type="text" id="first-name" placeholder="First Name">
+                            <input type="text" id="last-name" placeholder="Last Name">
+
+                            <input type="url" id="website" placeholder="Website">
+                            <input type="text" id="username" placeholder="Username">
+
+                            <input type="text" id="nickname" placeholder="Nickname">
+                            <input type="text" id="display-name" placeholder="Display Name">
+
+                            <input type="text" id="custom-field" placeholder="Input Field">
+                        </div>
+                        <button type="button" class="add-button">Add New Field</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
